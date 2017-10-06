@@ -1,4 +1,4 @@
-; (function (Food, Snake) {
+require(['./helper/food' ,'./helper/snake'],function (Food, Snake) {
   function Game() {
     this.canvas = document.getElementsByTagName('canvas')[0]
     this.ctx = this.canvas.getContext('2d')
@@ -36,4 +36,4 @@
   }
 
   new Game()
-})(Food, Snake)
+})

@@ -1,4 +1,5 @@
-;(function(){
+
+define(function(){
   function Food(json){
     this.game = json.game
     this.x = Math.round(Math.random()*29)
@@ -28,5 +29,5 @@
   }
 
 
-  window.Food = Food
-})()
+  return Food
+})
